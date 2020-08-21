@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnCreate = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbSoort = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnCreate
@@ -42,30 +42,31 @@
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
-            // comboBox1
+            // cbSoort
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 13);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(225, 21);
-            this.comboBox1.TabIndex = 2;
+            this.cbSoort.FormattingEnabled = true;
+            this.cbSoort.Location = new System.Drawing.Point(13, 13);
+            this.cbSoort.Name = "cbSoort";
+            this.cbSoort.Size = new System.Drawing.Size(225, 21);
+            this.cbSoort.TabIndex = 2;
             // 
             // NewRek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(254, 104);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(254, 143);
+            this.Controls.Add(this.cbSoort);
             this.Controls.Add(this.btnCreate);
             this.Name = "NewRek";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nieuwe Rekening Openen";
+            this.Load += new System.EventHandler(this.NewRek_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbSoort;
     }
 }

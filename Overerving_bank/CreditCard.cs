@@ -15,6 +15,10 @@ namespace Overerving_bank
         {
             Code = NewCode();
         }
+        public CreditCard(long rekNr, double saldo) : base(rekNr, saldo)
+        {
+            Code = NewCode();
+        }
 
         private int NewCode()
         {

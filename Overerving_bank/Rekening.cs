@@ -8,12 +8,18 @@ namespace Overerving_bank
 {
     class Rekening
     {
+        public string MyType { get; set; }
         public long RekNr { get; }
-        public double saldo { get; set; }
+        public double Saldo { get; set; }
 
         public Rekening(long rekNr)
         {
             RekNr = rekNr;
+        }
+        public Rekening(long rekNr, double saldo)
+        {
+            RekNr = rekNr;
+            Saldo = saldo;
         }
         public override string ToString()
         {

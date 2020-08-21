@@ -13,8 +13,7 @@ namespace Overerving_bank
         public Bank()
         {
             RekList = new List<Rekening>();
-            RekList.Add(new CreditCard(13748944003232));
-            RekList[0].saldo = 10000;
+            RekList.Add(new CreditCard(13748944003232,10000));
         }
     }
 }
